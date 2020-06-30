@@ -72,7 +72,7 @@ always @(posedge clk1)
   2. We are prefetching the two source registers. Register A and B which we use for normal executions. The prefetching is done until in the EX stage we come to know whether the second register is used or not 
  3. We are sign extending the sixteen bit offset.
 */
-always @(negedge clk2)
+	always @(posedge clk2)
 	if (HALTED == 0)
 	begin
 		if (IF_ID_IR[25:21] == 5'b00000) // Check if the first register is the default register 
