@@ -1,0 +1,29 @@
+
+State Machine - ID_EX_type
+Name ID_EX_type.HALT ID_EX_type.BRANCH ID_EX_type.STORE ID_EX_type.LOAD ID_EX_type.RM_ALU ID_EX_type.RR_ALU 
+ID_EX_type.RR_ALU 0 0 0 0 0 0 
+ID_EX_type.RM_ALU 0 0 0 0 1 1 
+ID_EX_type.LOAD 0 0 0 1 0 1 
+ID_EX_type.STORE 0 0 1 0 0 1 
+ID_EX_type.BRANCH 0 1 0 0 0 1 
+ID_EX_type.HALT 1 0 0 0 0 1 
+
+State Machine - EX_MEM_type
+Name EX_MEM_type.HALT EX_MEM_type.BRANCH EX_MEM_type.STORE EX_MEM_type.LOAD EX_MEM_type.RM_ALU EX_MEM_type.RR_ALU 
+EX_MEM_type.RR_ALU 0 0 0 0 0 0 
+EX_MEM_type.RM_ALU 0 0 0 0 1 1 
+EX_MEM_type.LOAD 0 0 0 1 0 1 
+EX_MEM_type.STORE 0 0 1 0 0 1 
+EX_MEM_type.BRANCH 0 1 0 0 0 1 
+EX_MEM_type.HALT 1 0 0 0 0 1 
+
+State Machine - MEM_WB_type
+Name MEM_WB_type.HALT MEM_WB_type.BRANCH MEM_WB_type.STORE MEM_WB_type.LOAD MEM_WB_type.RM_ALU MEM_WB_type.RR_ALU 
+MEM_WB_type.RR_ALU 0 0 0 0 0 0 
+MEM_WB_type.RM_ALU 0 0 0 0 1 1 
+MEM_WB_type.LOAD 0 0 0 1 0 1 
+MEM_WB_type.STORE 0 0 1 0 0 1 
+MEM_WB_type.BRANCH 0 1 0 0 0 1 
+MEM_WB_type.HALT 1 0 0 0 0 1 
+
+State Machine - Summary
