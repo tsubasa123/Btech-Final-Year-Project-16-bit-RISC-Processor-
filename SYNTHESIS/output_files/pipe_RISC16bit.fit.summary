@@ -1,0 +1,19 @@
+Fitter Status : Successful - Mon Jul 20 20:19:02 2020
+Quartus Prime Version : 20.2.0 Build 50 06/11/2020 SC Pro Edition
+Revision Name : pipe_RISC16bit
+Top-level Entity Name : pipe_RISC16bit
+Family : Cyclone 10 GX
+Device : 10CX220YF780I5G
+Timing Models : Final
+Power Models : Final
+Device Status : Final
+Logic utilization (in ALMs) : 0 / 80,330 ( 0 % )
+Total registers : 0
+Total pins : 2 / 340 ( < 1 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 12,021,760 ( 0 % )
+Total RAM Blocks : 0 / 587 ( 0 % )
+Total DSP Blocks : 0 / 192 ( 0 % )
+Total HSSI RX channels : 0 / 12 ( 0 % )
+Total HSSI TX channels : 0 / 12 ( 0 % )
+Total PLLs : 0 / 30 ( 0 % )

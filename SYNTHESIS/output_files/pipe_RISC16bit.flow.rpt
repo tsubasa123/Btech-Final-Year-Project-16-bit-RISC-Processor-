@@ -1,0 +1,138 @@
+Flow report for pipe_RISC16bit
+Mon Jul 20 20:19:26 2020
+Quartus Prime Version 20.2.0 Build 50 06/11/2020 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Parallel Compilation
+  2. Legal Notice
+  3. Flow Summary
+  4. Flow Settings
+  5. Flow Non-Default Global Settings
+  6. Flow Elapsed Time
+  7. Flow OS Summary
+  8. Flow Log
+
+
+
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 2      ;
++----------------------------+--------+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Flow Summary                                                            ;
++-----------------------------+-------------------------------------------+
+; Flow Status                 ; Successful - Mon Jul 20 20:19:26 2020     ;
+; Quartus Prime Version       ; 20.2.0 Build 50 06/11/2020 SC Pro Edition ;
+; Revision Name               ; pipe_RISC16bit                            ;
+; Top-level Entity Name       ; pipe_RISC16bit                            ;
+; Family                      ; Cyclone 10 GX                             ;
+; Device                      ; 10CX220YF780I5G                           ;
+; Timing Models               ; Final                                     ;
+; Power Models                ; Final                                     ;
+; Device Status               ; Final                                     ;
+; Logic utilization (in ALMs) ; 0 / 80,330 ( 0 % )                        ;
+; Total registers             ; 0                                         ;
+; Total pins                  ; 2 / 340 ( < 1 % )                         ;
+; Total virtual pins          ; 0                                         ;
+; Total block memory bits     ; 0 / 12,021,760 ( 0 % )                    ;
+; Total RAM Blocks            ; 0 / 587 ( 0 % )                           ;
+; Total DSP Blocks            ; 0 / 192 ( 0 % )                           ;
+; Total HSSI RX channels      ; 0 / 12 ( 0 % )                            ;
+; Total HSSI TX channels      ; 0 / 12 ( 0 % )                            ;
+; Total PLLs                  ; 0 / 30 ( 0 % )                            ;
++-----------------------------+-------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 07/20/2020 20:17:44 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; pipe_RISC16bit      ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                       ;
++---------------------------------+---------------------------------+---------------+-------------+----------------------+
+; Assignment Name                 ; Value                           ; Default Value ; Entity Name ; Section Id           ;
++---------------------------------+---------------------------------+---------------+-------------+----------------------+
+; COMPILER_SIGNATURE_ID           ; 105852886717884.159525646407235 ; --            ; --          ; --                   ;
+; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL ; Precision Synthesis             ; <None>        ; --          ; --                   ;
+; EDA_INPUT_DATA_FORMAT           ; Vqm                             ; --            ; --          ; eda_design_synthesis ;
+; EDA_LMF_FILE                    ; mentor.lmf                      ; --            ; --          ; eda_design_synthesis ;
+; EDA_OUTPUT_DATA_FORMAT          ; Verilog Hdl                     ; --            ; --          ; eda_simulation       ;
+; EDA_SIMULATION_TOOL             ; ModelSim (Verilog)              ; <None>        ; --          ; --                   ;
+; EDA_TIME_SCALE                  ; 1 ps                            ; --            ; --          ; eda_simulation       ;
+; MAX_CORE_JUNCTION_TEMP          ; 100                             ; --            ; --          ; --                   ;
+; MIN_CORE_JUNCTION_TEMP          ; -40                             ; --            ; --          ; --                   ;
+; PROJECT_OUTPUT_DIRECTORY        ; output_files                    ; --            ; --          ; --                   ;
++---------------------------------+---------------------------------+---------------+-------------+----------------------+
+
+
++------------------------------------------------------+
+; Flow Elapsed Time                                    ;
++-----------------+--------------+---------------------+
+; Module Name     ; Elapsed Time ; Peak Virtual Memory ;
++-----------------+--------------+---------------------+
+; Synthesis       ; 00:00:02     ; 1264 MB             ;
+; Fitter          ; 00:01:15     ; 3630 MB             ;
+; Timing Analyzer ; 00:00:06     ; 1717 MB             ;
+; Assembler       ; 00:00:12     ; 1804 MB             ;
+; Total           ; 00:01:35     ; --                  ;
++-----------------+--------------+---------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++-----------------+------------------+----------------+------------+----------------+
+; Module Name     ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++-----------------+------------------+----------------+------------+----------------+
+; Synthesis       ; Himangshu-Asus   ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
+; Fitter          ; Himangshu-Asus   ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
+; Timing Analyzer ; Himangshu-Asus   ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
+; Assembler       ; Himangshu-Asus   ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
++-----------------+------------------+----------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_syn --read_settings_files=on --write_settings_files=off pipe_RISC16bit -c pipe_RISC16bit
+quartus_fit --read_settings_files=on --write_settings_files=off pipe_RISC16bit -c pipe_RISC16bit
+quartus_sta pipe_RISC16bit -c pipe_RISC16bit --mode=finalize
+quartus_asm --read_settings_files=on --write_settings_files=off pipe_RISC16bit -c pipe_RISC16bit
+
+
+
